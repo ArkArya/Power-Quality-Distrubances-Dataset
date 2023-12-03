@@ -20,11 +20,11 @@ for alpha3=0.05:0.03:0.15
                         x=@(t) (1-alpha*((heaviside(t-t1)-heaviside(t-t2)))).*(sin(2*pi*50*t) + alpha3*sin(3*2*pi*50*t-vn) + alpha5*sin(5*2*pi*50*t-vn)); %% Generated Signal
                         flag=flag+1;
 
-                        if flag > 50 && flag < 70
-                            figure(flag)
-                            plot(t,x(t));
-                            hold on;
-                        end
+%                        if flag > 50 && flag < 70
+%                           figure(flag)
+%                           plot(t,x(t));
+%                           hold on;
+%                        end
 
 
                         %sampling
